@@ -71,7 +71,9 @@ if(isset($_POST['edit'])){
 
 <?php
 header("Content-Type: text/html;charset=UTF-8");
-
+$dsn='データベース名';
+$user='ユーザー名';
+$password='パスワード';
 $pdo=new PDO($dsn,$user,$password);
 $sql="CREATE TABLE board2"
 ."("
